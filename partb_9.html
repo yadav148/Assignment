@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two Column Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+
+    .left-column {
+      flex: 1;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .right-column {
+      flex: 1;
+      background-color: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right-column img {
+      max-width: 90%;
+      height: auto;
+      border: 2px solid #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+      <h1>Welcome to two layout column webpage</h1>
+      <p>This is the left column. You can put any text here—introductions, descriptions, or whatever content you like.</p>
+      <p>The layout is responsive. On smaller screens, the columns will stack vertically.</p>
+    </div>
+    <div class="right-column">
+      <img src="ballon.jpg" alt="Placeholder Image">
+    </div>
+  </div>
+</body>
+</html>
