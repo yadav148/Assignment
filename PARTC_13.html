@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Card</title>
+  <style>
+    body {
+      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .product-card {
+      background: white;
+      width: 280px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-card h3 {
+      margin: 15px 0 5px;
+    }
+
+    .product-card .price {
+      color: #28a745;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .product-card button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff4500;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .product-card button:hover {
+      background-color: #cc3700;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-card">
+    <h1>Shopping card</h1>
+    <img src="laptop.webp" alt="Product">
+    <h3>Awesome Product</h3>
+    <p class="price">17999RS</p>
+    <button>Buy Now</button>
+  </div>
+
+</body>
+</html>
